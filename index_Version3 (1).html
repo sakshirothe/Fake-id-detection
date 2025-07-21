@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake ID Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gradient-bg"></div>
+    <div class="container">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+            <span>Fake ID Detection</span>
+        </div>
+        <form id="idForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="idNumber">ID Number:</label>
+            <input type="text" id="idNumber" name="idNumber" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="idImage">Upload ID Image:</label>
+            <input type="file" id="idImage" name="idImage" accept="image/*" required>
+
+            <button type="submit" id="detectBtn">
+                <span>Detect</span>
+            </button>
+        </form>
+        <div id="loader" class="loader"></div>
+        <div id="result" class="result-card"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
